@@ -7,16 +7,36 @@
     <title>html form</title>
 </head>
 <style>
-    body{
-        background-color: rgb(200, 167, 219);
+    body {
+        background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+            linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+            linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
     }
-    h1{
+
+    h1 {
         text-align: center;
-        text-decoration:underline;
+        text-decoration: underline;
+        text-transform: uppercase;
+        animation: aagepiche 2s linear infinite;
+        animation-direction: alternate;
     }
-    div{
-        background-color: palegoldenrod;
+
+    @keyframes aagepiche {
+        from {
+            padding-left: 40px;
+        }
+
+        to {
+            padding-right: 40px;
+        }
+
+    }
+
+    div {
+        background-color: transparent;
         border: 2px solid black;
+        padding: 20px;
+        box-shadow: 5px 5px 20px black;
         margin-left: 30%;
         margin-right: 30%;
     }
@@ -26,49 +46,46 @@
 <body>
     <h1>Registration Form</h1>
     <div>
-        
-        <form> <fieldset>
-            <legend>
-                <h1>student reg.</h1>
-            </legend>
+
+        <form>
             <label>NAME:<input type="text" placeholder="Enter your name"></label>
             <hr>
             <label>MOBILE:<input type="text" placeholder="enter your number"></label>
             <hr>
             <label>EMAIL:<input type="email" placeholder="Enter your email"></label>
             <hr>
-            <label>Address:<textarea cols="15" rows="2"></textarea></label>
+            <label>ADDRESS:<textarea cols="15" rows="2"></textarea></label>
             <hr>
             <label>DOB:<input type="date"></label>
             <hr>
-            <label> blood group : <select name = "drop down">
-                <option value="o"> O</option>
-                <option value="a"> A+</option>
-                <option value="b"> B+</option>
-                <option value="b"> B</option>
-            </select></label>
+            <label> BLOOD GROUP : <select name="drop down">
+                    <option value="o"> O</option>
+                    <option value="a"> A+</option>
+                    <option value="b"> B+</option>
+                    <option value="b"> B</option>
+                </select></label>
             <hr>
-            <label>PASSWARD<input type="passward" placeholder="enter your passward"></label>
+            <label>PASSWARD<input type="passward" placeholder="Enter your passward"></label>
             <hr>
             <label>CASTE:<br><input type="checkbox" for="general">general</label><br>
             <label><input type="checkbox" for="OBC">OBC</label><br>
             <label><input type="checkbox" for="ST/SC">ST/SC</label><br>
             <hr>
-            <label> hobby <br><input type="radio" name="hobby" value="backetball">backetball</label>
+            <label> HOBBY <br><input type="radio" name="hobby" value="backetball">backetball</label>
             <label>
-            <label><input type="radio"  name="hobby" value="cricket"> cricket</label>
-            <hr>
-            <label>
-               photo <input type="file">
-            </label>
-            <hr>
-            <label>
+                <label><input type="radio" name="hobby" value="cricket"> cricket</label>
                 <hr>
-                submit:<input type="button" value="submit now">
-            </label>
+                <label>
+                    PHOTO <input type="file">
+                </label>
+                <hr>
+                <label>
+                    <hr>
+                    SUBMIT:<input type="button" value="submit now">
+                </label>
 
-        </form></fieldset>
-   
+        </form>
+
     </div>
 </body>
 
