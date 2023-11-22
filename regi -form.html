@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+</head>
+<style>
+    body{
+        background-color: rgb(200, 167, 219);
+    }
+    h1{
+        text-align: center;
+        text-decoration:underline;
+    }
+    div{
+        background-color: palegoldenrod;
+        border: 2px solid black;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+</style>
+
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        
+        <form> <fieldset>
+            <legend>
+                <h1>student reg.</h1>
+            </legend>
+            <label>NAME:<input type="text" placeholder="Enter your name"></label>
+            <hr>
+            <label>MOBILE:<input type="text" placeholder="enter your number"></label>
+            <hr>
+            <label>EMAIL:<input type="email" placeholder="Enter your email"></label>
+            <hr>
+            <label>Address:<textarea cols="15" rows="2"></textarea></label>
+            <hr>
+            <label>DOB:<input type="date"></label>
+            <hr>
+            <label> blood group : <select name = "drop down">
+                <option value="o"> O</option>
+                <option value="a"> A+</option>
+                <option value="b"> B+</option>
+                <option value="b"> B</option>
+            </select></label>
+            <hr>
+            <label>PASSWARD<input type="passward" placeholder="enter your passward"></label>
+            <hr>
+            <label>CASTE:<br><input type="checkbox" for="general">general</label><br>
+            <label><input type="checkbox" for="OBC">OBC</label><br>
+            <label><input type="checkbox" for="ST/SC">ST/SC</label><br>
+            <hr>
+            <label> hobby <br><input type="radio" name="hobby" value="backetball">backetball</label>
+            <label>
+            <label><input type="radio"  name="hobby" value="cricket"> cricket</label>
+            <hr>
+            <label>
+               photo <input type="file">
+            </label>
+            <hr>
+            <label>
+                <hr>
+                submit:<input type="button" value="submit now">
+            </label>
+
+        </form></fieldset>
+   
+    </div>
+</body>
+
+</html>
